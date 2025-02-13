@@ -4,7 +4,7 @@ from startscreen import StartScreen
 ##-------------------------------------
 
 
-window = Window("Example App", (0,255,0)) ##Create the window to work with
+window = Window("Example App", (100,0,100)) ##Create the window to work with
 
 ##Create Screen Objects for use------
 startScreen = StartScreen(window)
