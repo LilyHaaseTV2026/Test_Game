@@ -10,14 +10,15 @@ class StartScreen(Screen):
 
     def elementsToDisplay(self): #defines what elements will be on the page
         self.elements = [
-            Label((350, 250), 100, 100, self.state["displayText"], 50, (255,255,255)), RockButton(),PaperButton(),ScissorsButton(), ShootButton()#,
-            #Label((350, 250), 100, 100, self.state["emoji"], 50, (255,255,255))
+            Label((350, 250), 100, 100, self.state["displayText"], 50, (255,255,255)), RockButton(),PaperButton(),ScissorsButton(), ShootButton(),
+            Label((350, 100), 100, 100, self.state["displayText"], 50, (255,255,255)), RockButton(),PaperButton(),ScissorsButton(), ShootButton(), 
+            Image((75, 525), 50, 50, './imgs/rock no backround.png'),  Image((262.5, 525), 75, 37.5, './imgs/paper no backround.png'),  
+            Image((475, 525), 50, 50, './imgs/scisors no backround.png'),  Image((662.5, 525), 75, 37.5, './imgs/boom no backround.png')
+
 
             #(topLeftLoc: Any, width: Any, height: Any, text: Any, textColorRGB: Any = (0, 0, 0), backColorRGB: Any = (255, 255, 255)) -> Button
             #(topLeftLoc: Any, width: Any, height: Any, text: Any, fontSize: int = 14, textColorRGB: Any = (0, 0, 0)) -> Label
-            #"<3 HAPPY VALENTINES DAY <3"
-            #Button((350, 150), 50, 50, '<3', (255,220,200),(255, 255, 255))
-            #Label((150,65),500,500,self.state["displayText"], 50, (255,255,255)),
+
 
     ]
 
@@ -49,3 +50,18 @@ class ShootButton(Button):
     def onClick(self, screen): #override the onClick method to do our bidding, MUST TAKE SCREEN AS ARGUMENT
         screen.state["displayText"] = "Boom!!!" #modifies the state of the screen
        # screen.state["emoji"] = #(/U0001F4A5)
+
+
+
+
+
+
+
+
+
+
+            #,
+            #Label((350, 250), 100, 100, self.state["emoji"], 50, (255,255,255))
+            #"<3 HAPPY VALENTINES DAY <3"
+            #Button((350, 150), 50, 50, '<3', (255,220,200),(255, 255, 255))
+            #Label((150,65),500,500,self.state["displayText"], 50, (255,255,255)),
