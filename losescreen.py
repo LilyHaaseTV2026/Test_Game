@@ -14,7 +14,7 @@ class LoseScreen(Screen):
 
 class AgainButton(Button):
     def __init__(self):
-        super().__init__((600, 100), 100, 100, '''Game''', (0,0,0))
+        super().__init__((350, 400), 100, 100, '''Game''', (0,0,0))
         
     def onClick(self, screen): #override the onClick method to do our bidding, MUST TAKE SCREEN AS ARGUMENT
         screen.state["moveTo"] = "LOSE" #modifies the state of the screen
